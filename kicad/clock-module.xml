@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/adam/workspace/bb-computer-v2/kicad/clock-module.kicad_sch</source>
+    <date>Sun 23 Jan 2022 07:48:44 PM PST</date>
+    <tool>Eeschema 6.0.1-1.fc34</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Clock Module</title>
+        <company/>
+        <rev/>
+        <date>2022-01-23</date>
+        <source>clock-module.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>0.1uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ea5d45e8-996b-40f8-b7b9-2c3b46a91d95</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>1uF</value>
+      <libsource lib="Device" part="C_Polarized_US" description="Polarized capacitor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f0146146-c2ed-4dd5-8bed-fc27414dc2f2</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>0.01uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>922ff0d7-983f-4542-b9da-fca7e2b6e1eb</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>0.1uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a13b86ad-fc3e-452d-915e-66073c542320</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>0.01uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a26d444e-42f7-4914-91dc-44567c44436b</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>Yellow</value>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9d859987-2c79-4384-8d56-f7a46af49013</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>Red</value>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7912d4e5-6678-43a0-b8d5-bcb1b3181f5f</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>Yellow</value>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>18aae921-461a-42b8-bd7f-bcbe4ba21d57</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>Blue</value>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9f33ef2a-75de-40a5-a700-63374eebadfc</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>Green</value>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4312a3ee-1812-45f1-97e5-a39b80e37bb9</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>1K</value>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6d2677b2-ed10-49cf-8eb0-81abe95b1cba</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>1K</value>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9b8f78a2-b3b1-4988-a2fa-cb0275a6b09c</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>220</value>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7d4d15ac-e595-4abd-9476-105c454ee160</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>1K</value>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c85bd4b2-2580-4210-b5bb-56940df6e3ea</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>220</value>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d25d9ada-1e8e-4b26-affc-7a3437f9167b</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1K</value>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>812ad2df-bc89-4fba-9f0c-d012a64d8a31</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>220</value>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>28515d48-4be7-4c0a-a599-3695676eeb06</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>1K</value>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4f99bebe-74f2-4bec-8716-b0cc27fc4b1b</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>1K</value>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3779a783-4450-4770-a1c6-a7ebc3dbc350</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>220</value>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>13d2de99-a372-4eed-a649-8381697f43f9</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>220</value>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6807c5cf-9170-4480-9779-f2db73047283</tstamps>
+    </comp>
+    <comp ref="RV1">
+      <value>1M</value>
+      <libsource lib="Device" part="R_Potentiometer_Trim_US" description="Trim-potentiometer, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ed1b0183-04a2-4cb7-a1a1-20d3a3e82dac</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Push</value>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9e314810-f398-4510-8007-12fa6b274e62</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_SPDT</value>
+      <libsource lib="Switch" part="SW_SPDT" description="Switch, single pole double throw"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c79d235c-486d-44d6-8c4e-9c0023392927</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>LM555</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm555.pdf</datasheet>
+      <libsource lib="Timer" part="LM555xM" description="Timer, 555 compatible, SOIC-8"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d40ed1bf-6a69-492a-acf3-f71f1c7a81f2</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>74LS04</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74LS04</datasheet>
+      <libsource lib="74xx" part="74LS04" description="Hex Inverter"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>94f381c9-62c6-44a8-9f20-99b007b5a132 6c9758eb-354a-4b73-86ea-641a3fd2e298 744e0e79-ac95-413a-88df-b4979f0c0c78 9e2b2076-a189-44c2-a8d5-54c5770818fd 35141fba-2e4d-4172-aa64-9095450fab53</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>74LS08</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74LS08</datasheet>
+      <libsource lib="74xx" part="74LS08" description="Quad And2"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d556b72-1d56-4ef9-801c-f56aab720ae4 6082cc7e-a5e7-46d2-ab45-9c796be4717b 4bf64044-3703-4a43-88a6-c4cca575f679 3173622e-f513-4178-ab7b-b419e1f9f223</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>LM555</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm555.pdf</datasheet>
+      <libsource lib="Timer" part="LM555xM" description="Timer, 555 compatible, SOIC-8"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fbcfdfa5-2258-4171-a524-17fc515f012c</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>LM555</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm555.pdf</datasheet>
+      <libsource lib="Timer" part="LM555xM" description="Timer, 555 compatible, SOIC-8"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="clock-module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a8940441-851a-4102-ae98-d6c492184041</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xx" part="74LS04">
+      <description>Hex Inverter</description>
+      <docs>http://www.ti.com/lit/gpn/sn74LS04</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SSOP?14*</fp>
+        <fp>TSSOP?14*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS04</field>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/sn74LS04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="output"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="output"/>
+        <pin num="5" name="" type="input"/>
+        <pin num="6" name="" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="" type="output"/>
+        <pin num="9" name="" type="input"/>
+        <pin num="10" name="" type="output"/>
+        <pin num="11" name="" type="input"/>
+        <pin num="12" name="" type="output"/>
+        <pin num="13" name="" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xx" part="74LS08">
+      <description>Quad And2</description>
+      <docs>http://www.ti.com/lit/gpn/sn74LS08</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS08</field>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/sn74LS08</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="" type="output"/>
+        <pin num="4" name="" type="input"/>
+        <pin num="5" name="" type="input"/>
+        <pin num="6" name="" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="" type="output"/>
+        <pin num="9" name="" type="input"/>
+        <pin num="10" name="" type="input"/>
+        <pin num="11" name="" type="output"/>
+        <pin num="12" name="" type="input"/>
+        <pin num="13" name="" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized_US">
+      <description>Polarized capacitor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_Small">
+      <description>Light emitting diode, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Potentiometer_Trim_US">
+      <description>Trim-potentiometer, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_Potentiometer_Trim_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small_US">
+      <description>Resistor, small US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPDT">
+      <description>Switch, single pole double throw</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPDT</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Timer" part="LM555xM">
+      <description>Timer, 555 compatible, SOIC-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm555.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM555xM</field>
+        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm555.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="TR" type="input"/>
+        <pin num="3" name="Q" type="output"/>
+        <pin num="4" name="R" type="input"/>
+        <pin num="5" name="CV" type="input"/>
+        <pin num="6" name="THR" type="input"/>
+        <pin num="7" name="DIS" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xx">
+      <uri>/usr/share/kicad/symbols//74xx.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/usr/share/kicad/symbols//Switch.kicad_sym</uri>
+    </library>
+    <library logical="Timer">
+      <uri>/usr/share/kicad/symbols//Timer.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="CLK">
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U3" pin="8" pintype="output"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="6" pinfunction="THR" pintype="input"/>
+    </net>
+    <net code="3" name="HLT">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U2" pin="5" pintype="input"/>
+    </net>
+    <net code="4" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="CV" pintype="input"/>
+    </net>
+    <net code="5" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="RV1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="TR" pintype="input"/>
+      <node ref="U1" pin="6" pinfunction="THR" pintype="input"/>
+    </net>
+    <net code="6" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="U4" pin="5" pinfunction="CV" pintype="input"/>
+    </net>
+    <net code="7" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="U4" pin="6" pinfunction="THR" pintype="input"/>
+      <node ref="U4" pin="7" pinfunction="DIS" pintype="input"/>
+    </net>
+    <net code="8" name="Net-(C5-Pad1)">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="U5" pin="5" pinfunction="CV" pintype="input"/>
+    </net>
+    <net code="9" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="Q" pintype="output"/>
+      <node ref="U3" pin="2" pintype="input"/>
+    </net>
+    <net code="11" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U3" pin="5" pintype="input"/>
+      <node ref="U4" pin="3" pinfunction="Q" pintype="output"/>
+    </net>
+    <net code="13" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+    </net>
+    <net code="14" name="Net-(D5-Pad1)">
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(D5-Pad2)">
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U2" pin="1" pintype="input"/>
+      <node ref="U3" pin="1" pintype="input"/>
+      <node ref="U5" pin="3" pinfunction="Q" pintype="output"/>
+    </net>
+    <net code="16" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="DIS" pintype="input"/>
+    </net>
+    <net code="17" name="Net-(R2-Pad2)">
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="RV1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(R4-Pad2)">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="TR" pintype="input"/>
+    </net>
+    <net code="19" name="Net-(R8-Pad2)">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="TR" pintype="input"/>
+    </net>
+    <net code="20" name="Net-(R9-Pad2)">
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="SW2" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="U5" pin="4" pinfunction="R" pintype="input"/>
+    </net>
+    <net code="21" name="Net-(U2-Pad2)">
+      <node ref="U2" pin="2" pintype="output"/>
+      <node ref="U3" pin="4" pintype="input"/>
+    </net>
+    <net code="22" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6" pintype="output"/>
+      <node ref="U3" pin="9" pintype="input"/>
+    </net>
+    <net code="23" name="Net-(U2-Pad8)">
+      <node ref="U2" pin="8" pintype="output"/>
+      <node ref="U3" pin="10" pintype="input"/>
+    </net>
+    <net code="24" name="Net-(U2-Pad9)">
+      <node ref="U2" pin="9" pintype="input"/>
+      <node ref="U3" pin="11" pintype="output"/>
+    </net>
+    <net code="25" name="Net-(U2-Pad10)">
+      <node ref="U2" pin="10" pintype="output"/>
+      <node ref="U3" pin="12" pintype="input"/>
+    </net>
+    <net code="26" name="Net-(U2-Pad11)">
+      <node ref="U2" pin="11" pintype="input"/>
+      <node ref="U3" pin="6" pintype="output"/>
+    </net>
+    <net code="27" name="Net-(U2-Pad12)">
+      <node ref="U2" pin="12" pintype="output"/>
+      <node ref="U3" pin="13" pintype="input"/>
+    </net>
+    <net code="28" name="Net-(U2-Pad13)">
+      <node ref="U2" pin="13" pintype="input"/>
+      <node ref="U3" pin="3" pintype="output"/>
+    </net>
+    <net code="29" name="VCC">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="R" pintype="input"/>
+      <node ref="U1" pin="8" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U4" pin="8" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U5" pin="8" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="30" name="unconnected-(D3-Pad1)">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+    </net>
+    <net code="31" name="unconnected-(R6-Pad2)">
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="32" name="unconnected-(R7-Pad2)">
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="33" name="unconnected-(RV1-Pad3)">
+      <node ref="RV1" pin="3" pinfunction="3" pintype="passive+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(U4-Pad4)">
+      <node ref="U4" pin="4" pinfunction="R" pintype="input"/>
+    </net>
+    <net code="35" name="unconnected-(U5-Pad1)">
+      <node ref="U5" pin="1" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="36" name="unconnected-(U5-Pad7)">
+      <node ref="U5" pin="7" pinfunction="DIS" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>

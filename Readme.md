@@ -44,11 +44,9 @@ In fact: my first attempt at Ben Eater's Clock Module actually cooked one of the
 
 ## Schematics?
 
-Am I going to provide schematics?  I would like to.  But I also would like to provide them in a native format which can be edited -- not just a picture of a schematic.
+I was able to find KiCAD, an open source schematic drawing software.  It has natively all the elements that will be used to construct this computer.
 
-However, I have not found some easy-to-use open-source software for drawing them out.  Until I do, I am not planning on including them.  That does not mean I have given up my search.
-
-Stay tuned on this one.
+I will be adding these files into the `kicad` folder in this project.
 
 
 ## Common Interface
@@ -78,6 +76,23 @@ I will replace the individual LEDs with a 10-segment LED graph for most modules 
 With this change, the boards are able to get a higher density of LEDs and therefore a little more room on each board.  The drawback is that it will saturate the power rails for a section of the board and I may have to get creative when pulling power and ground to something else.
 
 
+## Wire Colors
+
+There are several color wires I plan to use -- a few more than Ben Eater used with the original computer.  These are:
+
+| Color | Used for |
+|:-----:|:---------|
+| Red   | +5V or tied high |
+| Black | Ground or tied low |
+| White | Clock signal (regular or inverted) |
+| Yellow | Control Lines |
+| Blue | Data bus lines |
+| Purple | Address lines |
+| Green | Connections on-module |
+| Brown | Manually input data and/or Arduino interface |
+| Grey | Data Output (such as LED) and other connections not listed above |
+
+
 ## Modules
 
 ### Clock Module
@@ -91,7 +106,7 @@ The changes I am making to this module are:
 1. Place a green LED indicator on the switched circuit to show when the clock is in run mode (vs. single-step mode).
 1. Add a red LED to indicate when the clock is halted by the control lines (the `HLT` signal).
 1. Remove the inverted `CLK'` signal, which will be relocated to the Control Module where it is consumed.
-1. Remove the OR gate and replace it with inverters and an AND gate (`A | B == (A' & B')'`).  See [2022-Jan-22 in the Journal](Journal.md#2022-Jan-22) for a discussion and proof.
+1. Remove the OR gate and replace it with inverters and an AND gate (`A | B == (A' & B')'`).  See [2022-Jan-22 in the Journal](journals/Journal-01-Clock.md#2022-Jan-22) for a discussion and proof.
 1. I am adding current-limiting resistors to every LED.  To be fair, Ben Eater's kits and instructions say that this is optional even though he does not use them in the videos.
 
 
