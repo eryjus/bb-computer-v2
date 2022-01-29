@@ -194,4 +194,25 @@ In the meantime, I am going to commit what I have so far (I want to check the vi
 
 ---
 
+OK, now to get into the extended testing.  If I need to make any wiring changes I want to do that before I document anything.
+
+Everything tested out properly.  I'm good to document the Module.
+
+---
+
+Well, I'm having a hell of a time getting everything to fit on a single sheet of paper.  The bus is particularly hard to deal with.  Not that I want to, but I may need to split the module into 2 schematics.  On the other hand, I may be able to notate the bus better and save a crap-ton of room.
+
+
+---
+
+### 2022-Jan-29
+
+I was able to finish up the schematic today.
+
+![Program Counter Schematic](../kicad/program-counter-module/program-counter-module-v1.jpg)
+
+With this, I think the Program Counter module is complete.
+
+Let me commit all this and then I will move on to the next module.
+
 

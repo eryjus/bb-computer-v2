@@ -1,5 +1,6 @@
 .vscode
 
-kicad/*backups
-kicad/\#auto_saved_files#
-kicad/*.svg
+kicad/**/*backups
+kicad/**/\#auto_saved_files#
+kicad/**/*.svg
+kicad/**/*.bak
