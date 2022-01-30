@@ -215,4 +215,6 @@ With this, I think the Program Counter module is complete.
 
 Let me commit all this and then I will move on to the next module.
 
+---
 
+After committing the schematic, I found an error in the pin-out text at the bottom left.  It was reversed.  I have not updated the picture in this journal; just know it was wrong.
