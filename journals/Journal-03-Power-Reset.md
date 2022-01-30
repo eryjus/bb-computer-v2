@@ -69,4 +69,14 @@ The only thing left is to create a schematic.
 ![Power Reset Module Schematic](../kicad/power-reset-module/power-reset-module-v1.jpg)
 
 
+---
 
+### 2022-Jan-30
+
+I realized while I was documenting this module for the [Readme](../Readme.md), I neglected to add a manual reset to the module.  I will need to add that today.
+
+Here is the updated schematic with the reset button added.
+
+![Updated Power Reset Module Schematic](../kicad/power-reset-module/power-reset-module-v1.1.jpg)
+
+This has been tested and works properly.

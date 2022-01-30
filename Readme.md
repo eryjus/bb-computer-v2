@@ -42,7 +42,7 @@ Have I made mistakes?  Absolutely.
 In fact: my first attempt at Ben Eater's Clock Module actually cooked one of the 555 Timer ICs.  I had to go find and order a replacement.  While I was at it I orders several other things I figured I would "break" along the way.  Now I have quite the collection going -- enough to prototype somethings on separate boards.
 
 
-## Schematics?
+## Schematics
 
 I was able to find KiCAD, an open source schematic drawing software.  It has natively all the elements that will be used to construct this computer.
 
@@ -108,6 +108,38 @@ The changes I am making to this module are:
 1. Remove the inverted `CLK'` signal, which will be relocated to the Control Module where it is consumed.
 1. Remove the OR gate and replace it with inverters and an AND gate (`A | B == (A' & B')'`).  See [2022-Jan-22 in the Journal](journals/Journal-01-Clock.md#2022-Jan-22) for a discussion and proof.
 1. I am adding current-limiting resistors to every LED.  To be fair, Ben Eater's kits and instructions say that this is optional even though he does not use them in the videos.
+
+
+### Program Counter Module
+
+The Program Counter is nearly the same as [Ben Eater's version](https://eater.net/8bit/pc).  The original Program Counter is referenced below:
+
+![Ben Eater's Program Counter](https://eater.net/schematics/pc.png)
+
+Simply put, the changes the improved Program Counter are:
+1. Make it a full 16-bits wide.
+1. Since this is an 8-bit bus, make an upper and lower register, tied together.
+1. There are 4 74LS161 counters tied together.
+1. The original Program Counter had a bad habit of counting when it wasn't supposed to (on my boards anyway).  The improved Program Counter has a 100Ω pull-down resistor across Pin 2 of the lowest nibble 74LS161.
+1. I use a 10-bar LED graph to indicate the data and control logic.  There are 8 green data LEDs, 1 yellow LED to indicate input from the bus, and 1 red LED to indicate output to the bus.  There is 1 graph for the upper Program Counter and another for the Lower Program Counter.
+1. A 74LS04 Inverter was added to that the Control signals are inverted "locally" when required.  4 of the 6 inverters are utilized.
+
+
+### Power-Up Reset / Zero Register Module
+
+Ben Eater did not have this feature in the original computer.  The original computer had a reset button to clear everything on after manually programming.  I also plan to have a reset button, but I do not want to have to manually "reset" the computer on power up.
+
+The reset button is tied into the power-up logic, not the Control Logic in the original computer.  The original computer's reset button can be seen [here](https://eater.net/schematics/control.png) in the bottom left corner of this schematic.
+
+I also had problems getting the pull-down resistors to work properly on the bus.  Instead of pulling the bus values to 0, it left them floating.  I was not smart enough to figure out what the problem was, much less how to fix it (using the pull-down resistors anyway).  From the videos, I was not able to determine how this was tested.
+
+Instead I made sure that every line was output to the bus even when there were only 4 bits to output (I tied the unassigned 4 bits low).  This cleaned up my problems.
+
+In the improved version, I am going to add a Zero Register.  This register will output a 16-bit zero value on the bus and will be the default output register to the bus when nothing else is being output.
+
+The Zero-Register is not really a register (more like a hard-coded zero value) and as such cannot be updated.
+
+Since I have plenty of room on the Power-Up Module and the Zero Register will be placed on this board as well.  I am going to have plenty of boards.
 
 
 
