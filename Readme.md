@@ -142,4 +142,32 @@ The Zero-Register is not really a register (more like a hard-coded zero value) a
 Since I have plenty of room on the Power-Up Module and the Zero Register will be placed on this board as well.  I am going to have plenty of boards.
 
 
+### General Registers
 
+There are 8 basic registers that are included in this updated computer, not counting the Program Counter.  These are:
+* A Register (Software accessible)
+* B Register (Software accessible)
+* X Register (Software accessible)
+* Stack Register (Software accessible)
+* Output Register (Write only; Software accessible)
+* Memory Address Register (MAR)
+* Memory Index Register  (MIR)
+* Temporary Register (TR)
+
+Some of these registers will have components added on.  For example, the MAR and MIR will always be added together to come up with the proper Memory Address.
+
+
+## Control Signals
+
+It occurs to me early on that I need to keep track of the control signals I am requiring, and what module they are associated with.
+
+| ## | Module          | Control Signal      |
+|:--:|:---------------:|:-------------------:|
+| 1  | Clock           | Halt                |
+| 2  | Program Counter | Clear               |
+| 3  | Program Counter | Enable              |
+| 4  | Program Counter | Upper Byte In (JMP) |
+| 5  | Program Counter | Upper Byte Out      |
+| 6  | Program Counter | Lower Byte In (JMP) |
+| 7  | Program Counter | Lower Byte Out      |
+| 8  | Power-Up Reset  | Zero Register Out   |
