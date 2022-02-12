@@ -171,3 +171,11 @@ It occurs to me early on that I need to keep track of the control signals I am r
 | 6  | Program Counter | Lower Byte In (JMP) |
 | 7  | Program Counter | Lower Byte Out      |
 | 8  | Power-Up Reset  | Zero Register Out   |
+| 9  | Temp Register   | Clear               |
+| 10 | Temp Register   | Upper Byte In       |
+| 11 | Temp Register   | Upper Byte Out      |
+| 12 | Temp Register   | Lower Byte In       |
+| 13 | Temp Register   | Lower Byte Out      |
+
+
+

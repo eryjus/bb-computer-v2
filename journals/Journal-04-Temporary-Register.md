@@ -58,3 +58,13 @@ Here is the schematic for the Temporary Register.
 
 This should wrap up this module.
 
+
+---
+
+### 2022-Feb-11
+
+Well, I had a but of an epiphany yesterday while I am out and about: Why am I worried about stupid optimizations when I need to be worried about getting this iteration completed.  As such, why do I need a MAR, MIR, MAA, and MAP when all I really need is a MAR and an ALU.  The same question goes for the stack: why do I need it when I can use the ALU?  Yeah, it may take an extra clock cycle or two, but I am going for the blinking lights more than I am going for speed.  If I want speed, I will buy another laptop.
+
+So, I need to go back and revisit my work on the Memory Address Module (which will be torn down and redone), and the A and Temporary Registers (as they may be relocated and need to be flipped.
+
+With that said, I am going paste this same update into all 3 Journals since they will all need to be revisited.
