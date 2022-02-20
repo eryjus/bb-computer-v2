@@ -92,6 +92,23 @@ There are several color wires I plan to use -- a few more than Ben Eater used wi
 | Brown | Manually input data and/or Arduino interface |
 | Grey | Data Output (such as LED) and other connections not listed above |
 
+## Overall Layout
+
+| Left Column | Center Column | Right Column |
+|:-----------:|:-------------:|:------------:|
+| Clock Module | Upper Program Counter | Upper Temp 1 Register |
+| Upper MAR | Lower Program Counter | Lower Temp 1 Register |
+| Lower MAR | Upper Flags | Upper ALU |
+| Upper RAM | Lower Flags | Lower ALU |
+| Lower RAM | Upper Stack | Upper Temp 2 Register |
+| Upper A Register| Lower Stack | Lower Temp 2 Register |
+| Lower A Register | Bus Bridge | ALU Control 1 |
+| Upper B Register | Bus Contents | ALU Control 2 |
+| Lower B Register | CPU Constants | Control Logic 1|
+| Upper X Register | Upper Output | Control Logic 2|
+| Lower X Register | Center Output | Control Logic 3|
+| Reset Logic | Lower Output | Control Logic 4 |
+
 
 ## Modules
 
@@ -142,6 +159,34 @@ The Zero-Register is not really a register (more like a hard-coded zero value) a
 Since I have plenty of room on the Power-Up Module and the Zero Register will be placed on this board as well.  I am going to have plenty of boards.
 
 
+### Arithmetic Logic Unit
+
+The Arithmetic Logic Unit (ALU) is used to perform a number of operations between the values in 0, 1, or 2 registers.  In this implementation, the ALU and the Temporary Registers take several boards to complete.
+
+The ALU also has a control module to handle a number of special cases with the Carry Flag and other flags.
+
+The ALU supports 16 operations:
+
+| ## | Operation | T1 | T2 |
+|:--:|:----------|:--:|:--:|
+|  0 | NOT       | Y  |    |
+|  1 | AND       | Y  | Y  |
+|  2 | NAND      | Y  | Y  |
+|  3 | OR        | Y  | Y  |
+|  4 | NOR       | Y  | Y  |
+|  5 | XOR       | Y  | Y  |
+|  6 | XNOR      | Y  | Y  |
+|  7 | FALSE     |    |    |
+|  8 | TRUE      |    |    |
+|  9 | ADD       | Y  | Y  |
+| 10 | SUB       | Y  | Y  |
+| 11 | SHL       | Y  |    |
+| 12 | INC       | Y  |    |
+| 13 | DEC       | Y  |    |
+| 14 | ADC       | Y  | Y  |
+| 15 | SBB       | Y  | Y  |
+
+
 ### General Registers
 
 There are 8 basic registers that are included in this updated computer, not counting the Program Counter.  These are:
@@ -151,10 +196,8 @@ There are 8 basic registers that are included in this updated computer, not coun
 * Stack Register (Software accessible)
 * Output Register (Write only; Software accessible)
 * Memory Address Register (MAR)
-* Memory Index Register  (MIR)
-* Temporary Register (TR)
-
-Some of these registers will have components added on.  For example, the MAR and MIR will always be added together to come up with the proper Memory Address.
+* Temporary Register 1 (TR1)
+* Temporary Register 2 (TR2)
 
 
 ## Control Signals
@@ -171,11 +214,23 @@ It occurs to me early on that I need to keep track of the control signals I am r
 | 6  | Program Counter | Lower Byte In (JMP) |
 | 7  | Program Counter | Lower Byte Out      |
 | 8  | Power-Up Reset  | Zero Register Out   |
-| 9  | Temp Register   | Clear               |
-| 10 | Temp Register   | Upper Byte In       |
-| 11 | Temp Register   | Upper Byte Out      |
-| 12 | Temp Register   | Lower Byte In       |
-| 13 | Temp Register   | Lower Byte Out      |
+| 9  | Temp Register 1 | Clear               |
+| 10 | Temp Register 1 | Upper Byte In       |
+| 11 | Temp Register 1 | Upper Byte Out      |
+| 12 | Temp Register 1 | Lower Byte In       |
+| 13 | Temp Register 1 | Lower Byte Out      |
+| 14 | Temp Register 2 | Clear               |
+| 15 | Temp Register 2 | Upper Byte In       |
+| 16 | Temp Register 2 | Upper Byte Out      |
+| 17 | Temp Register 2 | Lower Byte In       |
+| 18 | Temp Register 2 | Lower Byte Out      |
+| 19 | ALU             | Upper Byte Out      |
+| 20 | ALU             | Lower Byte Out      |
+| 21 | ALU             | Function Select 0   |
+| 22 | ALU             | Function Select 1   |
+| 23 | ALU             | Function Select 2   |
+| 24 | ALU             | Function Select 3   |
+
 
 
 

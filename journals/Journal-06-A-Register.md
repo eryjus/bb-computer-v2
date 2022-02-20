@@ -74,3 +74,11 @@ So, I need to go back and revisit my work on the Memory Address Module (which wi
 
 With that said, I am going paste this same update into all 3 Journals since they will all need to be revisited.
 
+
+---
+
+### 2022-Feb-18
+
+What used to be the A Register Module has now become the Temporary Register 1 Module.  And the Lower Temporary Register 1 portion is wired totally wrong.
+
+I need to correct this and I will need to re-make an A Register.  Until I get to a new A Register, I am going to continue the monologue on this module under the Temporary Register 1 Journal.
