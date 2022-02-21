@@ -68,6 +68,8 @@ To assist in this, I have created a test breadboard.  This board is intended to 
 
 The goal here is to quickly hook up wires and to be able to test the module functions more thoroughly before adding it into the final computer -- something I struggled to do with the original computer.
 
+You have a high likelihood of finding my test rig in many of my pictures.
+
 
 ## 10-Segment LED Graph
 
@@ -96,18 +98,19 @@ There are several color wires I plan to use -- a few more than Ben Eater used wi
 
 | Left Column | Center Column | Right Column |
 |:-----------:|:-------------:|:------------:|
-| Clock Module | Upper Program Counter | Upper Temp 1 Register |
-| Upper MAR | Lower Program Counter | Lower Temp 1 Register |
-| Lower MAR | Upper Flags | Upper ALU |
-| Upper RAM | Lower Flags | Lower ALU |
-| Lower RAM | Upper Stack | Upper Temp 2 Register |
-| Upper A Register| Lower Stack | Lower Temp 2 Register |
-| Lower A Register | Bus Bridge | ALU Control 1 |
-| Upper B Register | Bus Contents | ALU Control 2 |
-| Lower B Register | CPU Constants | Control Logic 1|
-| Upper X Register | Upper Output | Control Logic 2|
-| Lower X Register | Center Output | Control Logic 3|
-| Reset Logic | Lower Output | Control Logic 4 |
+| (10) Clock Module | (20) Upper Program Counter | (30) Upper Temp 1 Register |
+| (11) Upper MAR | (21) Lower Program Counter | (31) Lower Temp 1 Register |
+| (12) Lower MAR | (22) Upper Flags | (32) Upper ALU |
+| (13) Upper RAM | (23) Center Flags | (33) Lower ALU |
+| (14) Lower RAM | (24) Lower Flags | (34) Upper Temp 2 Register |
+| (15) Basic ROM | (25) Upper Stack | (35) Lower Temp 2 Register |
+| (16) Upper A Register| (26) Lower Stack | (36) ALU Control 1 |
+| (17) Lower A Register | (27) Bus Bridge | (37) ALU Control 2 |
+| (18) Upper B Register | (28) Bus Contents | (38) ALU Control 3 |
+| (19) Lower B Register | (29) CPU Constants | (39) Control Logic 1|
+| (1A) Upper X Register | (2A) Upper Output | (3A) Control Logic 2|
+| (1B) Lower X Register | (2B) Center Output | (3B) Control Logic 3|
+| (1C) Reset Logic | (2C) Lower Output | (3C) Control Logic 4 |
 
 
 ## Modules

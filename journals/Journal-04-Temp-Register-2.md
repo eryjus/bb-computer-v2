@@ -68,3 +68,13 @@ Well, I had a but of an epiphany yesterday while I am out and about: Why am I wo
 So, I need to go back and revisit my work on the Memory Address Module (which will be torn down and redone), and the A and Temporary Registers (as they may be relocated and need to be flipped.
 
 With that said, I am going paste this same update into all 3 Journals since they will all need to be revisited.
+
+
+---
+
+### 2022-Feb-20
+
+This register has been renamed to be the second Temporary Register (actually Temporary Register 2).  As such, I need to update the schematics.  It has been incorporated into the overall ALU section of the computer.
+
+
+
