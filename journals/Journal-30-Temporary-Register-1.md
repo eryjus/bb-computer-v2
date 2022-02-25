@@ -37,3 +37,23 @@ Well, after some looking and re-wiring, it was correct.
 
 OK, now the Upper Temporary Register 1 wiring is not correct.  I think it has the same problem as the Lower T1 had.  I got that worked out.
 
+
+---
+
+### 2022-Feb-20
+
+This file has been renamed to represent its location in the overall computer.
+
+---
+
+I have the Upper Temporary Register 1 schematic completed.
+
+![Upper Temporary Register 1](../kicad/30-Upper-Temporary-Register-1/30-Upper-Temporary-Register-1-v1.1.jpg)
+
+... and through the magic of copy-and-paste, I have the Lower Temporary Register 1 schematic completed as well.
+
+![Lower Temporary Register 1](../kicad/31-Lower-Temporary-Register-1/31-Lower-Temporary-Register-1-v1.1.jpg)
+
+This, then, allows me to clean up the old folder (which will need to have its image moved).
+
+Ahhhh....  I missed the connections to the actual ALU.  These will need to be added and the schematics re-published.

@@ -54,7 +54,7 @@ I also want to get in the schematic for the Temporary Register.
 
 Here is the schematic for the Temporary Register.
 
-![Temporary Register Schematic](../kicad/temporary-register-module/temporary-register-module-v1.jpg)
+![Temporary Register Schematic](../images/historical/temporary-register-module-v1.jpg)
 
 This should wrap up this module.
 
@@ -76,5 +76,21 @@ With that said, I am going paste this same update into all 3 Journals since they
 
 This register has been renamed to be the second Temporary Register (actually Temporary Register 2).  As such, I need to update the schematics.  It has been incorporated into the overall ALU section of the computer.
 
+
+---
+
+### 2022-Feb-21
+
+I renamed this file to match the new standard.
+
+I am working on the schematics today.
+
+Again, through the magic of copy-and-paste, I have the Upper Temporary Register 2:
+
+![Upper Temporary Register 2](../kicad/34-Upper-Temporary-Register-2/34-Upper-Temporary-Register-2-v1.1.jpg)
+
+... and the Lower Temporary Register 2:
+
+![Lower Temporary Register 2](../kicad/35-Lower-Temporary-Register-2/35-Lower-Temporary-Register-2-v1.1.jpg)
 
 

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "SB1R1Y8G_LED")(type "KiCad")(uri "/home/adam/workspace/bb-computer-v2/kicad/program-counter-module/SB1R1Y8G_LED.kicad_sym")(options "")(descr ""))
+  (lib (name "AT28C16")(type "KiCad")(uri "/home/adam/workspace/bb-computer-v2/kicad/program-counter-module/AT28C16.kicad_sym")(options "")(descr ""))
+)
