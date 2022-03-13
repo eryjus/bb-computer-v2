@@ -143,7 +143,7 @@ I was able to find KiCAD, which is open source.  I downloaded version 6.0.1 and 
 
 From there I was able to create a schematic of the Clock Module and export that to a .jpg as well.  Here is the result:
 
-![Clock Module Schematic](../kicad/clock-module/clock-module-v1.jpg)
+![Clock Module Schematic](../images/historical/clock-module-v1.jpg)
 
 The base schematic is the same as the original.  I was specific about which LEDs I added and added instructions on how to set up the common interface points.
 
@@ -153,4 +153,16 @@ The base schematic is the same as the original.  I was specific about which LEDs
 ### 2022-Jan-24
 
 I did find some errors in the schematic (things like connections not completed).  I cleaned those up today and re-published the above image.  That said, I also had to update my naming convention so I can keep them separate.
+
+
+---
+
+### 2022-Feb-25
+
+Today I am going to rename a few things to conform to the proper naming standards.  This will include this Journal and the schematic drawings.
+
+These changes give me the following schematic now:
+
+![Clock](../kicad/10-Clock/10-Clock-v1.1.jpg)
+
 

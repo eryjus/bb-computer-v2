@@ -1,4 +1,5 @@
 .vscode
+software/build*
 
 kicad/**/*backups
 kicad/**/\#auto_saved_files#
