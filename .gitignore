@@ -1,7 +1,17 @@
 .vscode
+.tup
+
+software/assembler/test.s
+software/assembler/asm
+output.bin
+
 software/build*
+software/assembler/bin/*
+!software/assembler/bin/Tupfile
 
 kicad/**/*backups
 kicad/**/\#auto_saved_files#
 kicad/**/*.svg
 kicad/**/*.bak
+
+

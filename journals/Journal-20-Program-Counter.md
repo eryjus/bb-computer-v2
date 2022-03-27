@@ -218,3 +218,11 @@ Let me commit all this and then I will move on to the next module.
 ---
 
 After committing the schematic, I found an error in the pin-out text at the bottom left.  It was reversed.  I have not updated the picture in this journal; just know it was wrong.
+
+
+---
+
+### 2022-Mar-19
+
+Today I am going to come back to the program counter.  The purpose is to rename the files and perform some cleanup.
+

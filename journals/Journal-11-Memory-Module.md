@@ -501,3 +501,21 @@ Which means I still have *some* problem to solve.  But right now I cannot descri
 
 I'm going to need to think on this a bit and figure out what to measure.
 
+---
+
+Had I been thinking about it, I would have put the memory contents at the bottom rather than between the MAR and the RAM/ROM modules.  Oh, well!  Too late now....
+
+---
+
+OK, I think I have board "13" ready.  Here is the schematic:
+
+![Board 13 -- Memory Contents](../kicad/13-Memory-Contents/13-Memory-Contents-v1.0.jpg)
+
+Next will be the RAM board, which has some more complicated logic for the pin selection.  But I have the fuck-its today and really don't want to do this busy work.  Maybe I can motivate myself -- or just suck it up and get it done.
+
+
+---
+
+### 2022-Mar-19
+
+I am going to bypass the rest of the schematics until I am ready to order PCBs.  The reason is that the entire schematic will need to be redone if I go down that route.  And I do plan to go down that route.

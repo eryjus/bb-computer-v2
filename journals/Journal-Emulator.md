@@ -99,3 +99,42 @@ While I think about this, I will work on the hardware.
 I got the clock module completed in the emulator.  It actually works well.  The only limitation is the speed of the clock, which is capped at 25Hz in the emulator.
 
 I actually believe this is enough of a change that I should commit the code even if I do not have the proper documentation on what needs to be installed.
+
+
+---
+
+### 2022-Mar-14
+
+It occurs to me that I really need to get parts of the control module set up so that I can simulate actions and test things out as I go.  This will emulate what I have going on with the physical build as well.  At some point, I will need to work out exactly how to have 1 set of binary data which will write to both the EEPROM and be used by the emulator -- when you have 2 masters, 1 is guaranteed to be wrong!
+
+Anyway, the control module really should be started to get some things working like the real world.
+
+---
+
+I was able to get all kinds of stuff done today.  I was able to get several control signals built:
+
+![Control Module](../images/Screenshot_20220314_210305.png)
+
+I was able to get a program counter working properly (and I believe it is complete):
+
+![Program Counter](../images/Screenshot_20220314_210325.png)
+
+Finally, I was able to also get a bus set up so I can pass data back and forth:
+
+![Bus](../images/Screenshot_20220314_210342.png)
+
+All-in-all, things were rather productive today!
+
+
+---
+
+### 2022-Mar-15
+
+Today I was able to get the Temporary Register 1 and 2 both working today.  I was also able to create a more generic register from which each register is sub-classed.
+
+I currently have a problem whereby I am creating a class (not just an object, but a separate class) for each register.  I could clean that up, but my intent is not to write the cleanest code here.
+
+Instead, my intent is to get an emulator working so I can write the BASIC code and start testing that out on an emulator before committing it to the hardware.
+
+
+

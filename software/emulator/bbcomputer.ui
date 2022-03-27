@@ -80,12 +80,12 @@
       </layout>
      </item>
      <item row="0" column="1">
-      <layout class="QVBoxLayout" name="verticalLayout_3">
+      <layout class="QVBoxLayout" name="ProgramCounterModule">
        <property name="spacing">
         <number>0</number>
        </property>
        <item>
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="ProgramCounterLabel">
          <property name="font">
           <font>
            <pointsize>14</pointsize>
@@ -102,6 +102,572 @@
           <set>Qt::AlignHCenter|Qt::AlignTop</set>
          </property>
         </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="ProgramCounterContents">
+         <item>
+          <widget class="QGroupBox" name="UpperProgramCounter">
+           <property name="maximumSize">
+            <size>
+             <width>115</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Upper Pgm Counter</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+           <widget class="KLed" name="uPrgRegAssertLed">
+            <property name="geometry">
+             <rect>
+              <x>8</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegReadLed">
+            <property name="geometry">
+             <rect>
+              <x>18</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit7">
+            <property name="geometry">
+             <rect>
+              <x>28</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit6">
+            <property name="geometry">
+             <rect>
+              <x>38</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit5">
+            <property name="geometry">
+             <rect>
+              <x>48</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit4">
+            <property name="geometry">
+             <rect>
+              <x>58</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit1">
+            <property name="geometry">
+             <rect>
+              <x>88</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit3">
+            <property name="geometry">
+             <rect>
+              <x>68</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit0">
+            <property name="geometry">
+             <rect>
+              <x>98</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit2">
+            <property name="geometry">
+             <rect>
+              <x>78</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="LowerProgramCounter">
+           <property name="maximumSize">
+            <size>
+             <width>115</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Lower Pgm Counter</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+           <widget class="KLed" name="lPrgRegBit5">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegAssertLed">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegBit2">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegReadLed">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegBit3">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegBit7">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegBit1">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegBit4">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegBit6">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegBit0">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </item>
@@ -155,6 +721,520 @@
          </property>
         </widget>
        </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QGroupBox" name="groupBox_18">
+           <property name="maximumSize">
+            <size>
+             <width>105</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Upper MAR</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+           <widget class="KLed" name="uPrgRegReadLed_4">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit7_4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit6_4">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit5_4">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit4_4">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit1_4">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit3_4">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit0_4">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit2_4">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_19">
+           <property name="maximumSize">
+            <size>
+             <width>105</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Lower MAR</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+           <widget class="KLed" name="lPrgRegBit5_4">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegBit2_4">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegReadLed_4">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegBit3_4">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegBit7_4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegBit1_4">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegBit4_4">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegBit6_4">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lPrgRegBit0_4">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
       </layout>
      </item>
      <item row="4" column="1">
@@ -200,12 +1280,248 @@
           </font>
          </property>
          <property name="text">
-          <string>Bus Bridge/Contents</string>
+          <string>Bus Contents</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignHCenter|Qt::AlignTop</set>
          </property>
         </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QGroupBox" name="groupBox_20">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>52</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="title">
+            <string>Bus</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+           <widget class="KLed" name="busBit5">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="busBit2">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="busBit3">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="busBit7">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="busBit1">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="busBit4">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="busBit6">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="busBit0">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </item>
@@ -233,15 +1549,1321 @@
          </property>
         </widget>
        </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="horizontalSpacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="8">
+          <widget class="QGroupBox" name="groupBox_21">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="KLed" name="pcClrLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pcClrButton">
+            <property name="geometry">
+             <rect>
+              <x>2</x>
+              <y>1</y>
+              <width>31</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>PC Clr</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="6">
+          <widget class="QGroupBox" name="groupBox_16">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QCheckBox" name="uT2OutCtl">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>13</y>
+              <width>15</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_27">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>-1</y>
+              <width>25</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>UT2O</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="KLed" name="uT2OutLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="0" column="7">
+          <widget class="QGroupBox" name="groupBox_13">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QCheckBox" name="lpcInCtl">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>13</y>
+              <width>15</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_22">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>-1</y>
+              <width>25</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>LPCI</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="KLed" name="lpcInLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QGroupBox" name="groupBox_9">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QCheckBox" name="pcEnableCtl">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>13</y>
+              <width>15</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_18">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>-1</y>
+              <width>25</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>CE</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="KLed" name="clockEnabCtlLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QGroupBox" name="groupBox_15">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QCheckBox" name="lT1OutCtl">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>13</y>
+              <width>15</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_24">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>-1</y>
+              <width>25</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>LT1O</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="KLed" name="lT1OutLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QGroupBox" name="groupBox_22">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QCheckBox" name="uT1InCtl">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>13</y>
+              <width>15</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_25">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>-1</y>
+              <width>25</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>UT1I</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="KLed" name="uT1InLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QGroupBox" name="groupBox_23">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QCheckBox" name="lT1InCtl">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>13</y>
+              <width>15</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_26">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>-1</y>
+              <width>25</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>LT1I</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="KLed" name="lT1InLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="5">
+          <widget class="QGroupBox" name="groupBox_24">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="KLed" name="t1ClrLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="t1ClrButton">
+            <property name="geometry">
+             <rect>
+              <x>2</x>
+              <y>1</y>
+              <width>31</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>T1 Clr</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QGroupBox" name="groupBox_10">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QCheckBox" name="upcOutCtl">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>13</y>
+              <width>15</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_19">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>-1</y>
+              <width>25</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>UPCO</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="KLed" name="upcOutLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QGroupBox" name="groupBox_11">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QCheckBox" name="lpcOutCtl">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>13</y>
+              <width>15</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_20">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>-1</y>
+              <width>25</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>LPCO</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="KLed" name="lpcOutLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QGroupBox" name="groupBox_5">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QPushButton" name="haltButton">
+            <property name="geometry">
+             <rect>
+              <x>2</x>
+              <y>1</y>
+              <width>31</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Halt</string>
+            </property>
+           </widget>
+           <widget class="KLed" name="haltCtlLed">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="7">
+          <widget class="QGroupBox" name="groupBox_17">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QCheckBox" name="lT2OutCtl">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>13</y>
+              <width>15</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_28">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>-1</y>
+              <width>25</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>LT2O</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="KLed" name="lT2OutLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="8">
+          <widget class="QGroupBox" name="groupBox_25">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QCheckBox" name="uT2InCtl">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>13</y>
+              <width>15</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_29">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>-1</y>
+              <width>25</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>UT2I</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="KLed" name="uT2InLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="0" column="6">
+          <widget class="QGroupBox" name="groupBox_12">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QCheckBox" name="upcInCtl">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>13</y>
+              <width>15</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_21">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>-1</y>
+              <width>25</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>UPCI</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="KLed" name="upcInLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QGroupBox" name="groupBox_14">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QCheckBox" name="uT1OutCtl">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>13</y>
+              <width>15</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_23">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>-1</y>
+              <width>25</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>UT1O</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="KLed" name="uT1OutLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QGroupBox" name="groupBox_6">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QPushButton" name="resetButton">
+            <property name="geometry">
+             <rect>
+              <x>2</x>
+              <y>1</y>
+              <width>31</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Reset</string>
+            </property>
+           </widget>
+           <widget class="KLed" name="resettingLed">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QGroupBox" name="groupBox_26">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QCheckBox" name="lT2InCtl">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>13</y>
+              <width>15</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_30">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>-1</y>
+              <width>25</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>LT2I</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="KLed" name="lT2InLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QGroupBox" name="groupBox_27">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="KLed" name="t2ClrLed">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>26</y>
+              <width>16</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="t2ClrButton">
+            <property name="geometry">
+             <rect>
+              <x>2</x>
+              <y>1</y>
+              <width>31</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>6</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>T2 Clr</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
       </layout>
      </item>
      <item row="2" column="2">
-      <layout class="QVBoxLayout" name="verticalLayout_9">
+      <layout class="QVBoxLayout" name="TempReg2Module">
        <property name="spacing">
         <number>0</number>
        </property>
        <item alignment="Qt::AlignTop">
-        <widget class="QLabel" name="label_8">
+        <widget class="QLabel" name="TempReg2Label">
          <property name="font">
           <font>
            <pointsize>14</pointsize>
@@ -258,6 +2880,572 @@
           <set>Qt::AlignHCenter|Qt::AlignTop</set>
          </property>
         </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="TempReg2Contents">
+         <item>
+          <widget class="QGroupBox" name="UpperTempReg2">
+           <property name="maximumSize">
+            <size>
+             <width>115</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Upper Temp Reg 2</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+           <widget class="KLed" name="uTmpReg2AssertLed">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg2ReadLed">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg2Bit7">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg2Bit6">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg2Bit5">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg2Bit4">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg2Bit1">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg2Bit3">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg2Bit0">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg2Bit2">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="LowerTempReg2">
+           <property name="maximumSize">
+            <size>
+             <width>115</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Lower Temp Reg 2</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+           <widget class="KLed" name="lTmpReg2Bit5">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg2AssertLed">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg2Bit2">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg2ReadLed">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg2Bit3">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg2Bit7">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg2Bit1">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg2Bit4">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg2Bit6">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg2Bit0">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </item>
@@ -363,6 +3551,291 @@
          </property>
         </widget>
        </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QGroupBox" name="UpperProgramCounter_2">
+           <property name="maximumSize">
+            <size>
+             <width>115</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Memory Contents</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+           <widget class="KLed" name="uPrgRegAssertLed_2">
+            <property name="geometry">
+             <rect>
+              <x>98</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegReadLed_2">
+            <property name="geometry">
+             <rect>
+              <x>88</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit7_2">
+            <property name="geometry">
+             <rect>
+              <x>8</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit6_2">
+            <property name="geometry">
+             <rect>
+              <x>18</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit5_2">
+            <property name="geometry">
+             <rect>
+              <x>28</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit4_2">
+            <property name="geometry">
+             <rect>
+              <x>38</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit1_2">
+            <property name="geometry">
+             <rect>
+              <x>68</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit3_2">
+            <property name="geometry">
+             <rect>
+              <x>48</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit0_2">
+            <property name="geometry">
+             <rect>
+              <x>78</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uPrgRegBit2_2">
+            <property name="geometry">
+             <rect>
+              <x>58</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
       </layout>
      </item>
      <item row="5" column="0">
@@ -392,12 +3865,12 @@
       </layout>
      </item>
      <item row="0" column="0">
-      <layout class="QVBoxLayout" name="clockModule">
+      <layout class="QVBoxLayout" name="ClockModule">
        <property name="spacing">
         <number>6</number>
        </property>
        <item alignment="Qt::AlignHCenter|Qt::AlignTop">
-        <widget class="QLabel" name="label">
+        <widget class="QLabel" name="ClockLabel">
          <property name="font">
           <font>
            <pointsize>14</pointsize>
@@ -416,13 +3889,19 @@
         </widget>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="clockControls">
+        <layout class="QHBoxLayout" name="ClockControls">
          <property name="spacing">
           <number>6</number>
          </property>
          <item>
-          <widget class="QGroupBox" name="groupBox_2">
+          <widget class="QGroupBox" name="TimerControl">
            <property name="minimumSize">
+            <size>
+             <width>98</width>
+             <height>66</height>
+            </size>
+           </property>
+           <property name="maximumSize">
             <size>
              <width>98</width>
              <height>66</height>
@@ -452,7 +3931,7 @@
               <height>46</height>
              </rect>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <layout class="QHBoxLayout" name="TimerFrequency">
              <item>
               <widget class="KLed" name="timerLed">
                <property name="sizePolicy">
@@ -486,7 +3965,7 @@
               </widget>
              </item>
              <item>
-              <layout class="QVBoxLayout" name="verticalLayout_19">
+              <layout class="QVBoxLayout" name="TimerFreqControl">
                <item>
                 <widget class="QSlider" name="clockFreqSlider">
                  <property name="sizePolicy">
@@ -535,7 +4014,19 @@
           </widget>
          </item>
          <item>
-          <widget class="QGroupBox" name="groupBox_3">
+          <widget class="QGroupBox" name="ManualControl">
+           <property name="minimumSize">
+            <size>
+             <width>98</width>
+             <height>66</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>98</width>
+             <height>66</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <pointsize>8</pointsize>
@@ -557,7 +4048,7 @@
               <height>22</height>
              </rect>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <layout class="QHBoxLayout" name="ManualTickControl">
              <property name="spacing">
               <number>0</number>
              </property>
@@ -617,11 +4108,17 @@
           </widget>
          </item>
          <item>
-          <widget class="QGroupBox" name="groupBox">
+          <widget class="QGroupBox" name="HaltControl">
+           <property name="minimumSize">
+            <size>
+             <width>74</width>
+             <height>66</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
              <width>74</width>
-             <height>16777215</height>
+             <height>66</height>
             </size>
            </property>
            <property name="title">
@@ -665,7 +4162,19 @@
           </widget>
          </item>
          <item>
-          <widget class="QGroupBox" name="groupBox_4">
+          <widget class="QGroupBox" name="ClockOutput">
+           <property name="minimumSize">
+            <size>
+             <width>98</width>
+             <height>66</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>98</width>
+             <height>66</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <pointsize>8</pointsize>
@@ -684,7 +4193,7 @@
               <height>24</height>
              </rect>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <layout class="QHBoxLayout" name="ClockOutputControl">
              <property name="spacing">
               <number>0</number>
              </property>
@@ -771,12 +4280,12 @@
       </layout>
      </item>
      <item row="0" column="2">
-      <layout class="QVBoxLayout" name="verticalLayout_2">
+      <layout class="QVBoxLayout" name="TempReg1Module">
        <property name="spacing">
         <number>0</number>
        </property>
        <item>
-        <widget class="QLabel" name="label_6">
+        <widget class="QLabel" name="TempReg1Label">
          <property name="font">
           <font>
            <pointsize>14</pointsize>
@@ -793,6 +4302,572 @@
           <set>Qt::AlignHCenter|Qt::AlignTop</set>
          </property>
         </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="TempReg1Contents">
+         <item>
+          <widget class="QGroupBox" name="UpperTempReg1">
+           <property name="maximumSize">
+            <size>
+             <width>115</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Upper Temp Reg 1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+           <widget class="KLed" name="uTmpReg1AssertLed">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg1ReadLed">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg1Bit7">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg1Bit6">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg1Bit5">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg1Bit4">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg1Bit1">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg1Bit3">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg1Bit0">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="uTmpReg1Bit2">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="LowerTempReg1">
+           <property name="maximumSize">
+            <size>
+             <width>115</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Lower Temp Reg 1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+           <widget class="KLed" name="lTmpReg1Bit5">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg1AssertLed">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg1Bit2">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg1ReadLed">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>255</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg1Bit3">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg1Bit7">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg1Bit1">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg1Bit4">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg1Bit6">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+           <widget class="KLed" name="lTmpReg1Bit0">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>25</y>
+              <width>10</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="state">
+             <enum>KLed::Off</enum>
+            </property>
+            <property name="shape">
+             <enum>KLed::Rectangular</enum>
+            </property>
+            <property name="look">
+             <enum>KLed::Flat</enum>
+            </property>
+            <property name="color">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </item>

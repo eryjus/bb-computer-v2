@@ -3,7 +3,7 @@
 #include "ui_bbcomputer.h"
 
 
-ClockModule::ClockModule(Ui::BBComputer *ui) : QObject(), ui(ui)
+ClockModule::ClockModule(BBComputer *bb) : QObject(), bb(bb), ui(bb->getUi())
 {
     isRunMode = true;
     isHalted = false;
@@ -51,6 +51,7 @@ void ClockModule::reset(void)
 {
     // -- turn off the halted LED
     ui->haltLed->off();
+    ui->haltLed->repaint();
     isHalted = false;
 }
 
@@ -58,7 +59,10 @@ void ClockModule::reset(void)
 void ClockModule::halt(void)
 {
     isHalted = true;
+    ui->clockLed->off();
+    ui->clockLed->repaint();
     ui->haltLed->on();
+    ui->haltLed->repaint();
 }
 
 

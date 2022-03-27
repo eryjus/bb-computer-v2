@@ -2,7 +2,10 @@
 #define CLOCKMODULE_H
 
 
-#include "ui_bbcomputer.h"
+class ClockModule;
+
+
+#include "bbcomputer.h"
 #include "timer.h"
 
 #include <QObject>
@@ -12,6 +15,7 @@ class ClockModule : public QObject {
     Q_OBJECT
 
 protected:
+    BBComputer *bb;
     Ui::BBComputer *ui;
     bool isHalted;
     bool isRunMode;
@@ -37,7 +41,7 @@ public slots:
 
 
 public:
-    ClockModule(Ui::BBComputer *ui);
+    ClockModule(BBComputer *bb);
     virtual ~ClockModule();
 
 };
